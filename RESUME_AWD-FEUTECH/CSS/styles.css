@@ -6,9 +6,25 @@ body {
   transition: background-color 0.5s ease;
 }
 
+body hr {
+  border-color: black;
+}
+
+body a {
+  color: rgb(58, 0, 216);
+}
+
 body.night-mode {
   background-color: #1B1B25;
   color: #fff;
+}
+
+body.night-mode hr {
+  border-color: white;
+}
+
+body.night-mode a {
+  color: aquamarine;
 }
 
 .switch {
