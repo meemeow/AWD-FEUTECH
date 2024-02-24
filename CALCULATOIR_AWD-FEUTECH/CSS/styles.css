@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: #002244
+}
+
+.calculator{
+    width: 400px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+.calcOutput{
+    position: relative;
+    width: 350px;
+    height: 90px;
+    background: #2c2b2b;
+    opacity: 0.5;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.calcButtons16 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.calcButtons16 button {
+    width: 65px;
+    height: 57px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+    background: #000000;
+    transition: all 0.3s ease;
+}
+
+.calcButtons16 #decimal {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.calcButtons16 #num0 {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    width: 140px;
+}
+
+.calcButtons16 #equals {
+    grid-column: 4;
+    grid-row: 5 / span 2;
+    height: 120px;
+}
